@@ -1,0 +1,53 @@
+/* script {
+  display: none;
+} */
+
+#control-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #252525;
+  border-radius: 10px;
+}
+
+#script-hint {
+  display: block;
+  padding: 20px;
+  margin: 20px 0;
+  border: 3px dashed lightcoral;
+  border-radius: 10px;
+}
+
+#script-hint pre {
+  white-space: pre;
+}
+
+#script-hint code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+#control-box * {
+  color: white;
+}
+
+#control-box h1 {
+  font-size: 20px;
+}
+
+#control-box select {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 3px;
+  appearance: menulist;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}

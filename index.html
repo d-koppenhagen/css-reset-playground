@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="main">
+  <div id="control-box">
+    <h1>CSS Reset Playground</h1>
+    <div>
+      <label for="css-rule">Choose a CSS rule:</label>
+      <select name="css-rule" id="css-rule">
+        <option value="">No CSS reset</option>
+        <option value="unset">* { all: unset; }</option>
+        <option value="initial">* { all: initial; }</option>
+        <option value="revert">* { all: revert; }</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+  </div>
+  <div class="content">
+    <ul>
+      <li>list item 1</li>
+      <li>list item 2</li>
+      <ul>
+        <li>sub list item 1</li>
+        <li>sub list item 2</li>
+      </ul>
+    </ul>
+  </div>
+  <div class="content">
+    <p>A simple paragraph</p>
+  </div>
+  <div class="content">
+    <span>A simple span</span>
+  </div>
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>Head Column 1</th>
+          <th>Head Column 2</th>
+          <th>Head Column 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Body Row 1 Column 1</td>
+          <td>Body Row 1 Column 2</td>
+          <td>Body Row 1 Column 3</td>
+        </tr>
+        <tr>
+          <td>Body Row 2 Column 1</td>
+          <td>Body Row 2 Column 2</td>
+          <td>Body Row 2 Column 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content">
+    <a href="https://google.de">A Link to Google</a>
+  </div>
+  <div class="content">
+    <button onclick="alert('alert called')">A simple Button</button>
+  </div>
+  <div class="content">
+    Input fields
+    <input type="button" value="Click me" onclick="alert('input type button called')">
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>
+
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+
+    <input type="hidden" id="custId" name="custId" value="3487">
+
+    <input type="image" src="https://d-koppenhagen.de/assets/images/logo_header.png" alt="Submit">
+
+    <label for="bdaymonth">Birthday (month and year):</label>
+    <input type="month" id="bdaymonth" name="bdaymonth">
+
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd">
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+
+    <input type="reset">
+
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch">
+
+    <input type="submit">
+
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage">
+
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week">
+  </div>
+  <div class="content">
+    Horizontal Rule:
+    <hr>
+  </div>
+  <div id="script-hint">
+    The content below is not an error. It's visible as the default Browsers CSS rule for script elements had been removed. This rule will hide the content of scripts:
+    <pre><code>
+script {
+  display: none;
+}</code></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
